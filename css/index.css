@@ -695,6 +695,7 @@ a:-webkit-any-link:active {
 }
 
 @media screen and (max-width: 676px){
+    /* team */
     .sp-height-p {
         padding-top: 50px;
     }
@@ -706,6 +707,10 @@ a:-webkit-any-link:active {
 
     .sp-image-p-2 {
         padding: 0 45px !important;
+    }
+
+    .modal-margin{
+        margin-top: 40px;
     }
 }
 
