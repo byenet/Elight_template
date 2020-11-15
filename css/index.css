@@ -5,9 +5,17 @@
     font-family: 'Roboto', sans-serif; 
 }
 
+body{
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    font-size: 13px;
+    line-height: 18px;
+    background: #fafafa;
+    color: #000;
+}
 
 /* Begin navbar */
-
 header{
     background-color: rgba(16,43,107,1);
     position: fixed;
@@ -164,11 +172,9 @@ iframe {
     margin-top: -12px;
     border: 0.5px solid black;
 }
-
 /* End introduce_2 */
 
 /* Begin introduce_3 */
-
 .text-dr {
     text-decoration: underline;
     text-decoration-color: black;
@@ -179,7 +185,106 @@ iframe {
     text-decoration: none !important;
 }
 
+.bg-none{
+    background-color: unset;
+}
 /* end introduce_3 */
+
+/* Begin review  */
+.review{
+    background-image: url(../img/why.png);
+    background-color: rgba(253, 216, 53, 1);
+    background-origin: content-box;
+    background-attachment: scroll;
+    background-position: top center;
+}
+
+.widget-content {
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    min-height: 10px;
+    background: 0 0 !important;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    display: inline-block;
+    letter-spacing: 0;
+    text-rendering: unset !important;
+    color: rgba(102, 102, 102, 1);
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.font-size-24 {
+    font-size: 24px;
+}
+
+.color-text-blue {
+    color: rgba(17, 33, 123, 1);
+}
+
+.text-black-rag{
+    color: rgba(0, 0, 0, 1);
+}
+
+.font-size-14_2 {
+    font-size: 14px;
+}
+
+.title-info {
+    margin: auto;
+    font-weight: 400;
+    line-height: 19px;
+    width: 87%;
+}
+
+.bd-bt {
+    border-top: 0.5px solid #e5e5e5;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.bd-ru-10px {
+    border-radius: 10px;
+}
+/* end review */
+
+/* Begin team  */
+.team{
+    background-color: white;
+}
+
+.color-text-blue2 {
+    color: rgba(40, 53, 147, 1);
+}
+
+.br-b {
+    border-bottom-right-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+    width: 186px;
+}
+
+.br-t {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.footter-text-show:-webkit-any-link {
+    color: rgb(85, 26, 139);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footter-text-show {
+    color: rgb(85, 26, 139);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* end team */
 
 /* ------------------------------------------------- */
 
@@ -219,25 +324,67 @@ iframe {
         height: 93px;
     }
 
+    /* Review */
+    .BOX105 {
+        width: 100%;
+        height: 500px;
+        border-radius: 9px;
+    }
+
+    .mb-md-5, .my-md-5 {
+        margin-bottom: 3rem!important;
+    }
+
+    .IMAGE73 {
+        top: 6px;
+        left: 33px;
+        width: 222px;
+        height: 145px;
+    }
+
+    /* team */
+    .elight-team {
+        padding: 0 32px 36px 100px;
+    }
+
+    .IMAGE143 {
+        width: 186px;
+        height: 264px;
+    }
+
+    .IMAGE154 {
+        top: .25px;
+        left: 0;
+        width: 159.0625px;
+        height: 226.5px;
+    }
+
 }
+
+@media screen and (min-width: 1200px){
+
+    /* Navbar */
+    header .container-auto-size {
+        height: 100%;
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+    }
+
+    .pr-xl-3 {
+        padding-right: 1rem!important;
+    }
+}
+
 
 @media screen and (min-width: 1366px){
     /* introduce_1 */
     .fix-padding-block {
-        padding: 0px 120px;
+        padding: 0px 90px;
     }
 }
 
-
-@media screen and (max-width: 768px){
-    /* Navbar */
-        #IMAGE5 {
-        top: 6px;
-        left: 14px;
-        width: 113px;
-        height: 41px;
-    }
-}
 
 @media screen and (max-width: 767px){
 
@@ -278,6 +425,21 @@ iframe {
         width: 93px;
         height: 93px;
     }
+
+    /* team */
+    .IMAGE143 {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    /* Navbar */
+        #IMAGE5 {
+        top: 6px;
+        left: 14px;
+        width: 113px;
+        height: 41px;
+    }
 }
 
 
@@ -316,6 +478,52 @@ iframe {
         height: 274px;
     }
 
+    /* review */
+    .BOX105 {
+        width: 100%;
+        height: 521px;
+        border-radius: 9px;
+    }
+    
+    .IMAGE73 {
+        height: 130px;
+    }
+
+    .space-box-r {
+        padding-right: 12px !important;
+    }
+
+    .space-box-center {
+        padding-right: 6px !important;
+        padding-left: 6px !important;
+    }
+
+    .space-box-l {
+        padding-left: 12px !important;
+    }
+
+    .font-size-14_2 {
+        font-size: 12px;
+    }
+
+    /* team */
+    .elight-team {
+        padding: 4px 62px 36px 54px;
+    }
+
+    .IMAGE143 {
+        width: 165px;
+        height: 214px;
+    }
+
+    .modal-size {
+        max-width: 700px;
+    }
+
+
+
+    
+
 }
 
 @media screen and (max-width: 1100px) and (min-width: 1024px){
@@ -324,17 +532,25 @@ iframe {
     .set-height-vide {
         height: 360px;
     }
+
+    /* review */
+    .BOX105 {
+        height: 470px;
+    }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (max-width: 676px){
+    .sp-height-p {
+        padding-top: 50px;
+    }
 
-    /* Navbar */
-    header .container-auto-size {
-        height: 100%;
-        width: 1200px;
-        margin: 0 auto;
-        padding: 0;
-        position: relative;
+    .sp-image-center {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sp-image-p-2 {
+        padding: 0 45px !important;
     }
 }
 
