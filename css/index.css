@@ -15,12 +15,14 @@ body{
     color: #000;
 }
 
+
+
 /* Begin navbar */
 header{
     background-color: rgba(16,43,107,1);
     position: fixed;
     top: 0;
-    z-index: 30;
+    z-index: 999999;
     width: 100%;
 }
 
@@ -177,7 +179,8 @@ iframe {
 /* Begin introduce_3 */
 .text-dr {
     text-decoration: underline;
-    text-decoration-color: black;
+    -webkit-text-decoration-color: black;
+            text-decoration-color: black;
     color: rgb(244, 67, 54);
 }
 
@@ -282,14 +285,143 @@ iframe {
     font-size: 13px;
     font-weight: bold;
 }
-
-
 /* end team */
+
+/* Begin event */
+.bg-event {
+    background-image: url(../img/why.png);
+    background-origin: content-box;
+    background-attachment: scroll;
+    background-position: top center;
+    background-color: rgba(33, 150, 243, 1);
+}
+
+.p-07-r {
+    padding: 0.7rem;
+}
+
+.z-index-10{
+    z-index: 10;
+}
+
+.title-event {
+    font-size: 13px;
+    text-align: justify;
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+    line-height: 19px;
+    text-rendering: unset !important;
+    width: 100%;
+    height: 100%;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    display: inline-block;
+    letter-spacing: 0;
+}
+
+.content-event {
+    font-size: 11px;
+    text-align: justify;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+    line-height: 17px;
+    text-rendering: unset !important;
+    width: 100%;
+    height: 100%;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    display: inline-block;
+    letter-spacing: 0;
+}
+
+.detail-event {
+    color: rgba(33, 150, 243, 1);
+    font-weight: 700;
+    line-height: 21px;
+    font-size: 15px;
+}
+
+.bd-bb {
+    border-top: 0.5px solid black;
+    width: 74%;
+    margin-top: 8px;
+}
+
+.event ul li{
+    list-style-type: none;
+    line-height: 30px;
+    
+}
+
+.event .list-style-none > li > a {
+    color: rgba(25, 118, 210, 1);
+    font-weight: normal;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+a:-webkit-any-link:active {
+    color: red !important;
+    text-decoration: none;
+}
+
+/* end event */
+
+/* begin back to top */
+
+.back-top-bottom {
+    z-index: 99999999999999999999999999999999999999999;
+    position: fixed;
+    bottom: 81px;
+    right: 15px;
+    background: white;
+    width: 32px;
+    height: 32px;
+    text-decoration: none;
+    border-radius: 35px;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.back-top-bottom i {
+    z-index: 99999999999999999999999999999999999999999;
+    color: #2ec849;
+    margin: 0;
+    position: relative;
+    left: -2px;
+    top: -3px;
+    font-size: 19px;
+    transition: all 0.3s ease;
+}
+
+.back-top-bottom > i:before {
+    font-size: 40px;
+}
+
+.toTopLink{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+  }
+
+/* end back to top */
+
+/* begin messenger */
+.message-fb {
+    width: 356px;
+}
+/* end messenger */
+
 
 /* ------------------------------------------------- */
 
 /* reponsive */
-
 
 @media screen and (min-width: 768px) {
     /* Navbar */
@@ -357,6 +489,13 @@ iframe {
         left: 0;
         width: 159.0625px;
         height: 226.5px;
+    }
+
+    /* event */
+    .BOX178 {
+        width: 100%;
+        height: 350px;
+        z-index: 99999;
     }
 
 }
@@ -429,6 +568,22 @@ iframe {
     /* team */
     .IMAGE143 {
         margin: 0 auto;
+    }
+
+    /* event */
+    .BOX178 {
+        width: 100%;
+        height: 350px;
+    }
+
+    .BOX1781 {
+        width: 79%;
+        margin: 0 auto;
+    }
+
+    /* messenger */
+    .message-fb {
+        width: 272px;
     }
 }
 
@@ -520,10 +675,10 @@ iframe {
         max-width: 700px;
     }
 
-
-
+    .br-b {
+        width: 165px;
+    }
     
-
 }
 
 @media screen and (max-width: 1100px) and (min-width: 1024px){
